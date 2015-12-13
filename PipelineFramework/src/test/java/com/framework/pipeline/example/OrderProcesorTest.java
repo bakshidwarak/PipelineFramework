@@ -8,6 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.bakshidwarak.pipeline.example.Address;
+import com.bakshidwarak.pipeline.example.InvalidAddressException;
+import com.bakshidwarak.pipeline.example.Order;
+import com.bakshidwarak.pipeline.example.OrderProcesor;
+import com.bakshidwarak.pipeline.example.OrderProcessorPipeline;
+import com.bakshidwarak.pipeline.example.ProcessingException;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { OrderProcessorConfig.class })
 public class OrderProcesorTest {
